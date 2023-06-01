@@ -1,28 +1,22 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import './App.css'
-import Card from './Components/Card'
-
-
+import Cart from './Components/Cart'
+import Form from './Components/Form'
+import Home from './Components/Home'
+import Navbar from './Components/Navbar'
 
 function App() {
-  /*const [alumno, setAlumno] = useState({
-    nombre: '',
-    nota: 0
-  })*/
+
+  const [cart, setCart] = useState([])
 
   return (
     <>
-    <div className='App'>
+      {/* <Navbar/>
+      <Home cart={cart} setCart={setCart}/>
+      <Cart cart={cart}/> */}
+  
+      <Form/>
 
-      <h1>Carga de Estudiantes</h1>
-
-      <form>  </form>
-      
-      <Card/>
-        
-
-    </div>
- 
     </>
   )
 }
